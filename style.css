@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+/* Основные стили */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff9fa;
+    margin: 0;
+    padding: 20px;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Кнопки авторизации */
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.auth-btn {
+    background-color: #e77c8d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(231, 124, 141, 0.2);
+}
+
+.auth-btn:hover {
+    background-color: #d96c7d;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(231, 124, 141, 0.3);
+}
+
+/* Основная форма */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.15);
+    position: relative;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #e77c8d;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Группы полей */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #e77c8d;
+    font-size: 16px;
+}
+
+/* Поля ввода */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ffd6de;
+    border-radius: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background-color: #fffbfc;
+    color: #555;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+select[multiple] {
+    height: auto;
+    min-height: 120px;
+}
+
+select[multiple] option {
+    padding: 10px;
+    border-bottom: 1px solid #ffebee;
+    transition: background-color 0.2s;
+}
+
+select[multiple] option:hover {
+    background-color: #ffebee;
+}
+
+/* Фокус-стили */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #e77c8d;
+    box-shadow: 0 0 0 4px rgba(231, 124, 141, 0.1);
+}
+
+/* Радио кнопки (пол) */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+}
+
+.radio-option label {
+    margin-bottom: 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #e77c8d;
+    margin-right: 8px;
+}
+
+/* Сообщения об ошибках */
+.error-message {
+    color: #ff6b81;
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.has-error input,
+.has-error textarea,
+.has-error select {
+    border-color: #ff6b81;
+}
+
+/* Кнопка отправки */
+button[type="submit"] {
+    background-color: #e77c8d;
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #d96c7d;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(231, 124, 141, 0.3);
+}
+
+/* Блок с учетными данными */
+.credentials {
+    background-color: #fff0f2;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border-left: 4px solid #e77c8d;
+}
+
+.credentials h3 {
+    margin-bottom: 10px;
+    color: #e77c8d;
+}
+
+.credentials p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Форма входа */
+.login-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.15);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #e77c8d;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+}
+
+.register-link a {
+    color: #e77c8d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    .form-container, .login-form {
+        padding: 25px;
+    }
+    
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .auth-buttons {
+        position: static;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
