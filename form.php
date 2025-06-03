@@ -16,7 +16,7 @@
         <?php endif; ?>
     </div>
 
-    <!-- Блок сгенерированных учетных данных (показывается один раз после регистрации) -->
+    <!-- Блок сгенерированных учетных данных -->
     <?php if (!empty($_SESSION['generated_login']) && !empty($_SESSION['generated_password']) && empty($_SESSION['login'])): ?>
         <div class="credentials">
             <h3>Ваши учетные данные:</h3>
